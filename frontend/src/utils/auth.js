@@ -1,4 +1,4 @@
-const baseUrl = 'api.mesto.elenavasilenko.nomoredomainsicu.ru'
+const baseUrl = 'https://api.mesto.elenavasilenko.nomoredomainsicu.ru'
 
 function getResponseData(res) {
     return res.ok ? res.json() : Promise.reject(`${res.status} ${res.statusText}`)

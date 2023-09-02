@@ -100,7 +100,7 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'api.mesto.elenavasilenko.nomoredomainsicu.ru',
+    baseUrl: 'https://api.mesto.elenavasilenko.nomoredomainsicu.ru',
     // headers: {
     //   authorization: '0c26d4a4-f51e-405b-92e1-f55fac7bf350',
     //   'Content-Type': 'application/json'
