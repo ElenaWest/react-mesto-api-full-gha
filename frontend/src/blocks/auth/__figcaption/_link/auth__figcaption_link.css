@@ -1,0 +1,7 @@
+.auth__figcaption_link {
+    text-decoration: none;
+}
+.auth__figcaption_link:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}

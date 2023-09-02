@@ -1,0 +1,16 @@
+.auth__span_type_error {
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 358px;
+    word-wrap: break-word;
+    color: #FF0000;
+    align-self: center;
+    }
+@media screen and (max-width: 767px) {
+    .auth__span_type_error {
+        max-width: 260px;
+    }
+    }

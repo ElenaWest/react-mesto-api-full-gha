@@ -1,0 +1,16 @@
+.header {
+    box-sizing: border-box;
+    min-height: 119px;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgb(84, 84, 84, .7);
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+    .header {
+        min-height: 85px;
+        padding-top: 28px;
+    }
+}

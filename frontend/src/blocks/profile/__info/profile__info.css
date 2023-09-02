@@ -1,0 +1,20 @@
+.profile__info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    column-gap: 18px;
+    row-gap: 16px;
+    grid-template-areas:
+    'name button'
+    'status status';
+    margin: 22px 0 25px 30px;
+}
+@media screen and (max-width: 1024px) {
+    .profile__info {
+        column-gap: 10px;
+        row-gap: 14px;
+        margin: 22.25px 0px 0px;
+        grid-template-columns: 235px 37px;
+        justify-self: center;
+    }
+}

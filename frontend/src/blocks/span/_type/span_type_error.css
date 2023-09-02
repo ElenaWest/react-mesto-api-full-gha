@@ -1,0 +1,17 @@
+.span_type_error {
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 36px;
+    max-width: 358px;
+    word-wrap: break-word;
+    color: #FF0000;
+}
+@media screen and (max-width: 767px) {
+    .span_type_error {
+        margin-left: 22px;
+        max-width: 238px;
+    }
+}

@@ -5,12 +5,12 @@
   
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-Адрес репозитория: https://github.com/...
+Адрес репозитория: https://github.com/ElenaWest/react-mesto-api-full-gha
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.99.229
 
-Frontend https://...
+Frontend https://mesto.elenavasilenko.nomoredomainsicu.ru
 
-Backend https://...
+Backend https://api.mesto.elenavasilenko.nomoredomainsicu.ru

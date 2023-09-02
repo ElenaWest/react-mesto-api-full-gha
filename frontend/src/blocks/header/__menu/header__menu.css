@@ -1,0 +1,20 @@
+.header__menu {
+    width: 24px;
+    height: 20px;
+    margin: 2px 9px 0 0;
+    display: none;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    background-image: url(../../../images/Menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header__menu:hover {
+    opacity: 0.6;
+}
+@media screen and (max-width: 767px) {
+    .header__menu {
+        display: block;
+    }
+}
