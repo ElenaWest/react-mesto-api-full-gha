@@ -9,17 +9,6 @@ module.exports.addCard = (req, res, next) => {
   const { name, link } = req.body;
   Card.create({ name, link, owner: req.user._id })
     .then((card) => {
-      // Card.findById(card._id)
-      //   .orFail()
-      //   .populate('owner')
-      //   .then((data) => res.status(HTTP_STATUS_CREATED).send(data))
-      //   .catch((error) => {
-      //     if (error instanceof mongoose.Error.DocumentNotFoundError) {
-      //       next(new NotFoundError('Запрашиваемая карточка не найдена'));
-      //     } else {
-      //       next(error);
-      //     }
-      //   });
       res.status(HTTP_STATUS_CREATED).send(card);
     })
     .catch((error) => {
@@ -33,7 +22,6 @@ module.exports.addCard = (req, res, next) => {
 
 module.exports.getCards = (req, res, next) => {
   Card.find({})
-    // .populate(['owner', 'likes'])
     .then((cards) => res.status(HTTP_STATUS_OK).send(cards))
     .catch(next);
 };
@@ -73,7 +61,6 @@ module.exports.deleteCard = (req, res, next) => {
 module.exports.likeCard = (req, res, next) => {
   Card.findByIdAndUpdate(req.params.cardId, { $addToSet: { likes: req.user._id } }, { new: true })
     .orFail()
-    // .populate(['owner', 'likes'])
     .then((card) => {
       res.status(HTTP_STATUS_OK).send(card);
     })
@@ -91,7 +78,6 @@ module.exports.likeCard = (req, res, next) => {
 module.exports.dislikeCard = (req, res, next) => {
   Card.findByIdAndUpdate(req.params.cardId, { $pull: { likes: req.user._id } }, { new: true })
     .orFail()
-    // .populate(['owner', 'likes'])
     .then((card) => {
       res.status(HTTP_STATUS_OK).send(card);
     })

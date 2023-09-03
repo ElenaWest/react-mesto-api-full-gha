@@ -1,8 +1,6 @@
 class Api {
     constructor(parameter) {
         this._url = parameter.baseUrl;
-        // this._headers = parameter.headers;
-        // this._authorization = parameter.headers.authorization;
     }
 
     _checkResponse(res) {        
@@ -34,7 +32,7 @@ class Api {
         return this._request(`/users/me`, {
             method: 'PATCH',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type' : 'application/json',
                 "Authorization" : `Bearer ${token}`
             },
             body: JSON.stringify({
@@ -48,7 +46,7 @@ class Api {
         return this._request(`/users/me/avatar`, {
             method: 'PATCH',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type' : 'application/json',
                 "Authorization" : `Bearer ${token}`
             },
             body: JSON.stringify({
@@ -61,7 +59,7 @@ class Api {
         return this._request(`/cards`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type' : 'application/json',
                 "Authorization" : `Bearer ${token}`
             },
             body: JSON.stringify({
@@ -101,10 +99,6 @@ class Api {
 
 const api = new Api({
     baseUrl: 'https://api.mesto.elenavasilenko.nomoredomainsicu.ru',
-    // headers: {
-    //   authorization: '0c26d4a4-f51e-405b-92e1-f55fac7bf350',
-    //   'Content-Type': 'application/json'
-    // }
 });
 
 export default api;
