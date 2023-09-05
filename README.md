@@ -7,7 +7,7 @@
 
 ## Ссылки на проект
 
-IP 158.160.99.229
+IP 158.160.107.65
 
 Frontend https://mesto.elenavasilenko.nomoredomainsicu.ru
 
